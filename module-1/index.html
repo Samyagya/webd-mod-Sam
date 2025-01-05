@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+   <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE-edge'>
+    <meta name='viewport' content='width=device-width , initial-scale=1.0'>
+    <link rel='stylesheet' href='style.css'>
+    <title>Calculator attempt - 3</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="screen">
+            0
+        </div>
+
+        <div class="button-area">
+            <div class="button-row">
+                <button class="calc-button triple" onclick="toclear()">
+                    C
+                </button>
+                <button class="calc-button" onclick="tobackspace()">
+                    &larr;
+                </button>
+            </div>
+
+            <div class="button-row">
+                <button class="calc-button" onclick="towrite(7)">
+                    7
+                </button>
+                <button class="calc-button" onclick="towrite(8)">
+                    8
+                </button>
+                <button class="calc-button" onclick="towrite(9)">
+                    9
+                </button>
+                <button class="calc-button" onclick="toperform('/')">
+                    &divide;
+                </button>
+            </div>
+
+            <div class="button-row">
+                <button class="calc-button" onclick="towrite(4)">
+                    4
+                </button>
+                <button class="calc-button" onclick="towrite(5)">
+                    5
+                </button>
+                <button class="calc-button" onclick="towrite(6)">
+                    6
+                </button>
+                <button class="calc-button" onclick="toperform('*')">
+                    &times;
+                </button>
+            </div>
+
+            <div class="button-row">
+                <button class="calc-button" onclick="towrite(1)">
+                    1
+                </button>
+                <button class="calc-button" onclick="towrite(2)">
+                    2
+                </button>
+                <button class="calc-button" onclick="towrite(3)">
+                    3
+                </button>
+                <button class="calc-button" onclick="toperform('-')">
+                    &minus;
+                </button>
+            </div>
+
+            <div class="button-row">
+                <button class="calc-button" onclick="towrite(0)">
+                    0
+                </button>
+                <button class="calc-button" onclick="towrite('.')">
+                    .
+                </button>
+                <button class="calc-button" onclick="toperform('+')">
+                    &plus;
+                </button>
+                <button class="calc-button" onclick="toequal()">
+                    &equals;
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+<script src='script.js'></script>
+</body>
+</html>
